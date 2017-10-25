@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/wg/.nvm/versions/node/v7.7.1/bin/node /usr/local/bin/yarn add -D clean-webpack-plugin
+  /Users/wg/.nvm/versions/node/v7.7.1/bin/node /usr/local/bin/yarn add babel-preset-env
 
 PATH: 
   /Users/wg/.nvm/versions/node/v7.7.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -23,8 +23,8 @@ npm manifest:
       "babel-cli": "^6.26.0",
       "babel-core": "^6.26.0",
       "babel-loader": "^7.1.2",
-      "babel-preset-env": "^1.6.0",
       "babel-preset-react": "^6.24.1",
+      "clean-webpack-plugin": "^0.1.17",
       "compression-webpack-plugin": "^1.0.1",
       "concurrently": "^3.5.0",
       "css-loader": "^0.28.7",
@@ -52,7 +52,8 @@ npm manifest:
       "devcon": "concurrently \" node server \" \"yarn run dev \" ",
       "devhttp": "concurrently \" http-server -c-1 \" \"yarn run dev \" ",
       "http": "http-server -c-1",
-      "build": "webpack --env=build"
+      "build": "webpack --env=build",
+      "start": "node server"
     }
   }
 
@@ -1315,6 +1316,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
     dependencies:
       source-map "0.5.x"
+  
+  clean-webpack-plugin@^0.1.17:
+    version "0.1.17"
+    resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.17.tgz#71c57242e6d47204d46f809413176e7bed28ec49"
+    dependencies:
+      rimraf "^2.6.1"
   
   cliui@^2.1.0:
     version "2.1.0"
