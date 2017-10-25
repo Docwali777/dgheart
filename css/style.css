@@ -1,0 +1,45 @@
+nav.navbar.navbar-default {
+  background: #CD0027;
+  border: 1px solid white
+}
+.navbar-default .navbar-brand {
+color: white;
+font-Size: 32px
+}
+.navbar-default .navbar-brand:hover {
+color: yellow
+}
+.navbar-default .navbar-brand:active {
+color: white
+}
+.navbar-default .navbar-brand:visited {
+color: white
+}
+button.navbar-toggle.collapsed:hover{
+    background: white
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #E3B500
+}
+
+.navbar-default .navbar-toggle .icon-bar:hover{
+  background-color: #CD0027
+}
+
+ul.nav.navbar-nav > li {
+color: white;
+font-size: 32
+}
+
+ul.nav.navbar-nav > li > a {
+color: white
+}
+ul.nav.navbar-nav > li.active > a {
+background-color: #CD0027;
+color: white;
+
+}
+ul.nav.navbar-nav > li.active > a:visited {
+background-color: #CD0027;
+}
