@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 
 import {TitleSectionWithImages} from './commons'
+
+//pics
 import SaludosLogo from '../../image/Saludos.png'
+import ProfilePic from '../../image/image-300x300.jpg'
+import ThhcLogo from '../../image/healthy-heart-logo.png'
+import CasaPedsLogo from '../../image/13fafe_eb62a62f5bbe466e9cab57ae1506815c_mv2.png'
+
 import { Col, Grid, Row, PanelGroup, Panel, Button, Collapse, Well } from 'react-bootstrap'
 
 const projects = [
@@ -35,7 +41,7 @@ constructor(props){
           sm={12}
           title={'Wali Gauvin, MD'}
           subtitle={'Pediatric Cardiologist'}
-          img={'http://thehealthyheartcenter.com/wordpress/wp-content/uploads/2011/10/image-300x300.jpeg'}
+          img={ProfilePic}
         />
 
 
@@ -62,7 +68,7 @@ constructor(props){
               sm={6}
               title={'The Healthy Heart Center'}
               locations={'Locations in Maryland'}
-              img={'http://www.thehealthyheartcenter.com/art/healthy-heart-logo.png'}
+              img={ThhcLogo}
             />
             <Collapse in={this.state.open}>
               <div>
@@ -80,7 +86,7 @@ constructor(props){
               sm={6}
               title={'Casa Pediatrics'}
               locations={'Locations in Virginia'}
-              img={'https://static.wixstatic.com/media/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png/v1/fill/w_374,h_241,al_c,usm_0.66_1.00_0.01/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png'}
+              img={CasaPedsLogo}
             />
           </Panel>
         </PanelGroup>
@@ -115,7 +121,7 @@ constructor(props){
 
       </Panel>
 
-      <Panel header="Casa Pediatrics" eventKey="2">
+      <Panel header="" eventKey="2">
         <TitleSectionWithImages
           sm={6}
           title={'Casa Pediatrics'}
