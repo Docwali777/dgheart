@@ -40,8 +40,8 @@ constructor(props){
       <Row >
         <TitleSectionWithImages
           sm={12}
-          title={'Wali Gauvin, MD'}
-          subtitle={'Pediatric Cardiologist'}
+          title={'Dr. Wali Gauvin'}
+          subtitle={'Pediatric Cardiology and Family Weight Management'}
           img={ProfilePic}
         />
 
@@ -67,8 +67,8 @@ constructor(props){
 
           <Panel header="Casa Pediatrics" eventKey="2">
             <TitleSectionWithImages
-              sm={6}
-              title={'Casa Pediatrics'}
+                  sm={12} md={12} lg={12}
+              title={''}
               locations={'Locations in Virginia'}
               img={CasaPedsLogo}
             />
@@ -87,7 +87,7 @@ constructor(props){
 
       <Panel header="Promoting Health Awareness in Latino Men" eventKey="3">
         <TitleSectionWithImages
-          sm={6}
+              sm={12} md={12} lg={12}
           img={SaludosLogo}
         />
       </Panel>
@@ -104,8 +104,8 @@ constructor(props){
 
         <Panel header="Using Technology to Prevent Childhood Obesity" eventKey="4">
           <TitleSectionWithImages
-            sm={6}
-            // title={'Casa Pediatrics'}
+              sm={12} md={12} lg={12}
+            title={''}
             locations={'Locations in Virginia'}
             img={HHS_childhood_obesity}
           />
