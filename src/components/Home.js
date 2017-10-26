@@ -8,7 +8,7 @@ const Home = () =>{
   <div>
     <Jumbotron style={{marginTop: 50}}>
       <div className='text-center'>
-        <h1 style={{marginBottom: 50}} > Achieving Cardiac Health through Community Alliances and Technology</h1>
+        <h1 style={{marginBottom: 50}} > Achieving Cardiac Health through Community Outreach and Technology</h1>
 
 
         <p><Link to='/about'><Button bsStyle="primary">Learn more</Button></Link></p>
