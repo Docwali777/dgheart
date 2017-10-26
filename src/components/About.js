@@ -7,6 +7,7 @@ import SaludosLogo from '../../image/Saludos.png'
 import ProfilePic from '../../image/image-300x300.jpg'
 import ThhcLogo from '../../image/healthy-heart-logo.png'
 import CasaPedsLogo from '../../image/13fafe_eb62a62f5bbe466e9cab57ae1506815c_mv2.png'
+import HHS_childhood_obesity from '../../image/HHS_competition_child_obesity.png'
 
 import { Col, Grid, Row, PanelGroup, Panel, Button, Collapse, Well } from 'react-bootstrap'
 
@@ -63,21 +64,17 @@ constructor(props){
           <PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
 
 
-          <Panel header="The Healthy Heart Center" eventKey="1">
+          <Panel  header="The Healthy Heart Center" eventKey="1">
+          <Row >
+
             <TitleSectionWithImages
               sm={6}
-              title={'The Healthy Heart Center'}
+              // title={'The Healthy Heart Center'}
               locations={'Locations in Maryland'}
               img={ThhcLogo}
             />
-            <Collapse in={this.state.open}>
-              <div>
-                <Well>
-                  Pediatric Cardiology and Family Weight Management Services with Location in Souther and Northern Maryland
-                </Well>
-              </div>
-            </Collapse>
 
+          </Row>
 
           </Panel>
 
@@ -94,42 +91,42 @@ constructor(props){
       </Row>
         <hr />
         {/*  */}
+
       <Row>
           <h2>Community Projects</h2>
         {/* <TitleSectionWithImages
           sm={12}
           projects={this.state.projects}
         /> */}
-      </Row>
+
       <PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
 
 
-      <Panel header="SaluD/Os" eventKey="1">
+      <Panel header="Promoting Health Awareness in Latino Men" eventKey="3">
         <TitleSectionWithImages
           sm={6}
           img={SaludosLogo}
-
-        />
-        <Collapse in={this.state.open}>
-          <div>
-            <Well>
-              Pediatric Cardiology and Family Weight Management Services with Location in Souther and Northern Maryland
-            </Well>
-          </div>
-        </Collapse>
-
-
-      </Panel>
-
-      <Panel header="" eventKey="2">
-        <TitleSectionWithImages
-          sm={6}
-          title={'Casa Pediatrics'}
-          locations={'Locations in Virginia'}
-          img={'https://static.wixstatic.com/media/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png/v1/fill/w_374,h_241,al_c,usm_0.66_1.00_0.01/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png'}
         />
       </Panel>
+
     </PanelGroup>
+  </Row>
+    <Row>
+        <h2>Health and Technology</h2>
+
+        <PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
+
+        <Panel header="Using Technology to Prevent Childhood Obesity" eventKey="4">
+          <TitleSectionWithImages
+            sm={6}
+            // title={'Casa Pediatrics'}
+            locations={'Locations in Virginia'}
+            img={HHS_childhood_obesity}
+          />
+        </Panel>
+      </PanelGroup>
+
+    </Row>
     </div>
     )
   }
