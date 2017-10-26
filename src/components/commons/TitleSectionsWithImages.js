@@ -6,7 +6,7 @@ import { Col, Grid, Row} from 'react-bootstrap'
 
 const TitleSectionWithImages = ({sm, md, lg, title, subtitle, img, projects}) =>{
 
-let listOfProjects = projects !== undefined ? projects.map(p => <ProjectCards key={p.url} {...p} /> ) : <img src={img} />
+let listOfProjects = projects !== undefined ? projects.map(p => <ProjectCards key={p.url} {...p} /> ) : <img style={{height: 'auto', maxWidth: '100%'}} src={img} />
 
   return(
     <Col style={{marginBottom: 50}} sm={sm} md={md} lg={lg}>
