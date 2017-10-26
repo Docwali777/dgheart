@@ -50,31 +50,18 @@ constructor(props){
         <hr />
       <Row>
           <h2>Medical Practices</h2>
-          {/* <TitleSectionWithImages
-            sm={6}
-            title={'The Healthy Heart Center'}
-            img={'http://www.thehealthyheartcenter.com/art/healthy-heart-logo.png'}
-          />
 
-          <TitleSectionWithImages
-            sm={6}
-            title={'Casa Pediatrics'}
-            img={'https://static.wixstatic.com/media/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png/v1/fill/w_374,h_241,al_c,usm_0.66_1.00_0.01/13fafe_eb62a62f5bbe466e9cab57ae1506815c~mv2.png'}
-          /> */}
           <PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
 
-
           <Panel  header="The Healthy Heart Center" eventKey="1">
-          <Row >
 
             <TitleSectionWithImages
-              sm={6}
-              // title={'The Healthy Heart Center'}
+              sm={12} md={12} lg={12}
+              title={''}
               locations={'Locations in Maryland'}
               img={ThhcLogo}
             />
 
-          </Row>
 
           </Panel>
 
@@ -94,10 +81,6 @@ constructor(props){
 
       <Row>
           <h2>Community Projects</h2>
-        {/* <TitleSectionWithImages
-          sm={12}
-          projects={this.state.projects}
-        /> */}
 
       <PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
 
@@ -111,6 +94,9 @@ constructor(props){
 
     </PanelGroup>
   </Row>
+
+    <hr />
+
     <Row>
         <h2>Health and Technology</h2>
 
@@ -127,6 +113,7 @@ constructor(props){
       </PanelGroup>
 
     </Row>
+      <hr />
     </div>
     )
   }
