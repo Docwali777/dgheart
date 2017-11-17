@@ -20,17 +20,17 @@ const Menu  = () =>{
       <LinkContainer to='/about'>
          <NavItem >About</NavItem>
       </LinkContainer>
-       <NavItem eventKey={2} href="#">Wali Gauvin, M.D.</NavItem>
+       {/* <NavItem eventKey={2} href="#">Wali Gauvin, M.D.</NavItem> */}
 
      </Nav>
-     <Nav pullRight>
+     {/* <Nav pullRight>
        <LinkContainer to='/locations'>
          <NavItem eventKey={1} href="#">Locations</NavItem>
        </LinkContainer>
 
        <NavItem eventKey={2} href="#">Community Projects</NavItem>
        <NavItem eventKey={2} href="#">Technology</NavItem>
-     </Nav>
+     </Nav> */}
    </Navbar.Collapse>
  </Navbar>
     </div>
