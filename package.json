@@ -41,6 +41,7 @@
     "devhttp": "concurrently \" http-server -c-1 \" \"yarn run dev \" ",
     "http": "http-server -c-1",
     "build": "webpack --env=build",
-    "start": "node server"
+    "start": "node server",
+    "serverBuild": "webpack --env=server"
   }
 }
