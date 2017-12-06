@@ -20,8 +20,10 @@ const Menu  = () =>{
       <LinkContainer to='/about'>
          <NavItem >About</NavItem>
       </LinkContainer>
-       {/* <NavItem eventKey={2} href="#">Wali Gauvin, M.D.</NavItem> */}
+      <LinkContainer to='/blog'>
+      <NavItem eventKey={2} href="#">Mental Health</NavItem>
 
+      </LinkContainer>
      </Nav>
      {/* <Nav pullRight>
        <LinkContainer to='/locations'>

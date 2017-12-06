@@ -83,25 +83,24 @@ var express = __webpack_require__(2);
 var path = __webpack_require__(3);
 var bodyParser = __webpack_require__(4);
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = 8080;
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
+// app.get('*.js', function (req, res, next) {
+//   req.url = req.url + '.gz';
+//   res.set('Content-Encoding', 'gzip');
+//   next();
+// });
 
 app.get('/*', function (req, res) {
   res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 });
 
-app.listen(PORT, function () {
-  console.log('server on PORT: ' + PORT);
-});
+app.listen(PORT);
+console.log('server on PORT: ' + PORT);
 /* WEBPACK VAR INJECTION */}.call(exports, "server"))
 
 /***/ }),
