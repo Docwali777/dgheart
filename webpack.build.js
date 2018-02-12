@@ -5,6 +5,8 @@ const webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -24,7 +26,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ['style-loader', 'css-loader']
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: {loader: "css-loader", options: { minimize: true }}
+        })
       },
       { test: /\.(jpeg|jpg|png|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader', options: {limit: 100000}
@@ -64,11 +69,21 @@ module.exports = {
      new HtmlWebpackPlugin({
        title: 'DgHeart.io',
        filename: 'index.html',
-       template: 'src/index.html'
+       template: 'src/index.html',
+       minify: {
+        collapseWhitespace: true,
+        collapseInlineTagWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true
+      }
      }),
      new CleanWebpackPlugin(['public'], {
        verbose:  true,
        dry:    false
-     })
+     }), 
+     new ExtractTextPlugin("styles.css"), 
+     new StyleExtHtmlWebpackPlugin({
+      minify: true
+    })
   ]
 }
